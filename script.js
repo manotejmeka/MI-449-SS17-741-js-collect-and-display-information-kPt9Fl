@@ -8,33 +8,33 @@ var preview = document.getElementById('preview')
 var raw = document.getElementById('raw')
 
 firstName.addEventListener('input', function () {
-    addText()
+  addText()
 })
 
 lastName.addEventListener('input', function () {
-    addText()
+  addText()
 })
 
 describe.addEventListener('input', function () {
-    addText()
+  addText()
 })
 
 email.addEventListener('input', function () {
-    addText()
+  addText()
 })
 
 phone.addEventListener('input', function () {
-    addText()
+  addText()
 })
 
-function addText(){
-    var text = "<h1>Hi, my name is "+firstName.value+" "+lastName.value+" !</h1> \
-<p>"+describe.value+"</p>\
-<p> If you're interested in a date, you can email me at \
-<a href='mailto:'"+email.value+"' target='_blank'>"+email.value+"</a> \
-or give me a call at \
-<a href='tel:"+phone.value+"' target='_blank'>"+phone.value+"</a>.</p>";
+function addText () {
+  var text = '<h1>Hi, my name is ' + firstName.value + ' ' + lastName.value + ' !</h1>'  + 
+                '<p>' + describe.value + '</p>' + 
+                '<p> If you\'re interested in a date, you can email me at' + 
+                    '<a href="mailto:' + email.value + '" target="_blank">' + email.value + '</a>'  + 
+                    'or give me a call at <a href="tel:' + phone.value + '" target="_blank">' + phone.value + '</a>.' + 
+                '</p>'
 
-    preview.innerHTML = text
-    raw.textContent = text
+  preview.innerHTML = text
+  raw.textContent = text
 }
