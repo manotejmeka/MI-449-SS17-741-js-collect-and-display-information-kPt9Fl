@@ -8,23 +8,23 @@ var preview = document.getElementById('preview')
 var raw = document.getElementById('raw')
 
 firstName.addEventListener('input', function () {
-  addText()
+  addText
 })
 
 lastName.addEventListener('input', function () {
-  addText()
+  addText
 })
 
 describe.addEventListener('input', function () {
-  addText()
+  addText
 })
 
 email.addEventListener('input', function () {
-  addText()
+  addText
 })
 
 phone.addEventListener('input', function () {
-  addText()
+  addText
 })
 
 function addText () {
