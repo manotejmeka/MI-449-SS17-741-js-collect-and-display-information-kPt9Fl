@@ -7,25 +7,15 @@ var phone = document.getElementById('phone')
 var preview = document.getElementById('preview')
 var raw = document.getElementById('raw')
 
-firstName.addEventListener('input', function () {
-  addText
-})
+firstName.addEventListener('input', addText)
 
-lastName.addEventListener('input', function () {
-  addText
-})
+lastName.addEventListener('input', addText)
 
-describe.addEventListener('input', function () {
-  addText
-})
+describe.addEventListener('input', addText)
 
-email.addEventListener('input', function () {
-  addText
-})
+email.addEventListener('input', addText)
 
-phone.addEventListener('input', function () {
-  addText
-})
+phone.addEventListener('input', addText)
 
 function addText () {
   var text = '<h1>Hi, my name is ' + firstName.value + ' ' + lastName.value + ' !</h1>'  + 
